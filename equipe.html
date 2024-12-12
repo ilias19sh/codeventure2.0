@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notre Équipe - CodeVenture</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav
+      class="bg-white/90 backdrop-blur-md shadow-lg fixed w-full z-50 transition-all duration-300"
+    >
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center h-20">
+          <div class="flex items-center space-x-2">
+            <a
+              href="index.html"
+              class="text-2xl font-extrabold bg-gradient-to-r from-[#2563EB] to-[#60A5FA] bg-clip-text text-transparent hover:scale-105 transition-transform"
+            >
+              CodeVenture
+            </a>
+          </div>
+          <!-- Menu Desktop -->
+          <div class="hidden md:flex items-center space-x-8">
+            <a
+              href="index.html"
+              class="relative text-[#1E293B] hover:text-[#2563EB] transition-colors group"
+            >
+              Accueil
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#2563EB] transition-all duration-300 group-hover:w-full"
+              ></span>
+            </a>
+            <a
+              href="services.html"
+              class="relative text-[#1E293B] hover:text-[#2563EB] transition-colors group"
+            >
+              Services
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#2563EB] transition-all duration-300 group-hover:w-full"
+              ></span>
+            </a>
+            <a
+              href="projets.html"
+              class="relative text-[#1E293B] hover:text-[#2563EB] transition-colors group"
+            >
+              Projets
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#2563EB] transition-all duration-300 group-hover:w-full"
+              ></span>
+            </a>
+            <a
+              href="equipe.html"
+              class="relative text-[#1E293B] hover:text-[#2563EB] transition-colors group"
+            >
+              Équipe
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#2563EB] transition-all duration-300 group-hover:w-full"
+              ></span>
+            </a>
+            <a
+              href="contact.html"
+              class="px-6 py-2 bg-[#2563EB] text-white rounded-lg hover:bg-[#60A5FA] transform hover:-translate-y-0.5 transition-all duration-300 shadow-lg hover:shadow-[#2563EB]/50"
+            >
+              Contact
+            </a>
+          </div>
+          <!-- Menu Mobile -->
+          <div class="md:hidden">
+            <button
+              id="mobile-menu-button"
+              class="text-[#1E293B] hover:text-[#2563EB] transition-colors"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!-- Menu Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden pb-6">
+          <a
+            href="index.html"
+            class="block py-2 text-[#1E293B] hover:text-[#2563EB] transition-colors"
+            >Accueil</a
+          >
+          <a
+            href="services.html"
+            class="block py-2 text-[#1E293B] hover:text-[#2563EB] transition-colors"
+            >Services</a
+          >
+          <a
+            href="projets.html"
+            class="block py-2 text-[#1E293B] hover:text-[#2563EB] transition-colors"
+            >Projets</a
+          >
+          <a
+            href="equipe.html"
+            class="block py-2 text-[#1E293B] hover:text-[#2563EB] transition-colors"
+            >Équipe</a
+          >
+          <a
+            href="contact.html"
+            class="block py-2 text-[#1E293B] hover:text-[#2563EB] transition-colors"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section Équipe -->
+    <section
+      class="relative min-h-[60vh] flex items-center justify-center overflow-hidden"
+    >
+      <div class="absolute inset-0 z-0">
+        <img
+          src="https://images.unsplash.com/photo-1522071901873-411886a10004?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80"
+          alt="Team Background"
+          class="w-full h-full object-cover animate-subtle-zoom"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-[#1E293B]/90 to-[#1E293B]/90"
+        ></div>
+      </div>
+      <div class="relative z-10 max-w-7xl mx-auto px-4 py-32 text-center">
+        <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">
+          <span
+            class="bg-gradient-to-r from-white to-[#60A5FA] bg-clip-text text-transparent"
+          >
+            Notre Équipe
+          </span>
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-200 max-w-2xl mx-auto">
+          Des experts passionnés à votre service
+        </p>
+      </div>
+    </section>
+
+    <!-- Section Notre Vision -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-3xl font-bold text-[#1E293B] mb-6">Notre Vision</h2>
+            <p class="text-gray-600 mb-8">
+              Chez CodeVenture, nous croyons en la puissance de l'innovation
+              technologique pour transformer les idées en solutions concrètes.
+              Notre équipe est composée d'experts passionnés qui partagent une
+              vision commune : créer des expériences numériques exceptionnelles.
+            </p>
+            <div class="grid grid-cols-2 gap-6">
+              <div class="text-center">
+                <div class="text-4xl font-bold text-[#2563EB] mb-2">100+</div>
+                <div class="text-gray-600">Projets Réalisés</div>
+              </div>
+              <div class="text-center">
+                <div class="text-4xl font-bold text-[#2563EB] mb-2">15+</div>
+                <div class="text-gray-600">Experts Passionnés</div>
+              </div>
+            </div>
+          </div>
+          <div class="relative">
+            <div
+              class="absolute -inset-4 bg-gradient-to-r from-[#2563EB] to-[#60A5FA] rounded-xl opacity-75 blur-xl"
+            ></div>
+            <img
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+              alt="Team Vision"
+              class="relative rounded-xl shadow-2xl"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Membres de l'Équipe -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-[#1E293B] mb-4">
+            Notre Équipe
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Des experts passionnés qui donnent vie à vos projets
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Membre 1 -->
+          <div class="group">
+            <div class="relative overflow-hidden rounded-xl">
+              <img
+                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                alt="Team Member"
+                class="w-full aspect-square object-cover transform group-hover:scale-110 transition-transform duration-500"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-[#1E293B] to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300"
+              >
+                <div class="absolute bottom-0 left-0 right-0 p-6">
+                  <p class="text-gray-300">
+                    Expert en développement front-end et UX design
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-6">
+              <h3 class="text-xl font-bold text-[#1E293B]">Marie Laurent</h3>
+              <p class="text-[#2563EB]">Lead Developer</p>
+            </div>
+          </div>
+
+          <!-- Membre 2 -->
+          <div class="group">
+            <div class="relative overflow-hidden rounded-xl">
+              <img
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                alt="Team Member"
+                class="w-full aspect-square object-cover transform group-hover:scale-110 transition-transform duration-500"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-[#1E293B] to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300"
+              >
+                <div class="absolute bottom-0 left-0 right-0 p-6">
+                  <p class="text-gray-300">
+                    Expert en design d'interfaces et expérience utilisateur
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-6">
+              <h3 class="text-xl font-bold text-[#1E293B]">Thomas Dubois</h3>
+              <p class="text-[#2563EB]">Lead Designer UI/UX</p>
+            </div>
+          </div>
+
+          <!-- Membre 3 -->
+          <div class="group">
+            <div class="relative overflow-hidden rounded-xl">
+              <img
+                src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                alt="Team Member"
+                class="w-full aspect-square object-cover transform group-hover:scale-110 transition-transform duration-500"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-[#1E293B] to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300"
+              >
+                <div class="absolute bottom-0 left-0 right-0 p-6">
+                  <p class="text-gray-300">
+                    Spécialiste en gestion de projets agiles
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-6">
+              <h3 class="text-xl font-bold text-[#1E293B]">Julie Bernard</h3>
+              <p class="text-[#2563EB]">Chef de Projet</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Rejoignez-nous -->
+    <section class="py-20 bg-[#1E293B]">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-8">
+          Rejoignez Notre Équipe
+        </h2>
+        <p class="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
+          Nous sommes toujours à la recherche de talents passionnés pour
+          rejoindre notre aventure
+        </p>
+        <a
+          href="contact.html"
+          class="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-white bg-[#2563EB] rounded-xl hover:bg-[#60A5FA] transform hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-[#2563EB]/50"
+        >
+          Voir nos offres d'emploi
+          <svg
+            class="w-5 h-5 ml-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17 8l4 4m0 0l-4 4m4-4H3"
+            />
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1E293B] text-white py-12">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center">
+          <a
+            href="index.html"
+            class="text-2xl font-extrabold bg-gradient-to-r from-[#2563EB] to-[#60A5FA] bg-clip-text text-transparent hover:scale-105 transition-transform"
+          >
+            CodeVenture
+          </a>
+          <p class="mt-4 text-gray-400">contact@codeventure.fr</p>
+          <div class="mt-8 pt-8 border-t border-gray-800">
+            <p class="text-gray-400">
+              &copy; 2024 CodeVenture. Tous droits réservés.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script pour le menu mobile -->
+    <script>
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
+  </body>
+</html>

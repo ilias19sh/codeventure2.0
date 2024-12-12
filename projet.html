@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nos Projets - CodeVenture</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav
+      class="bg-white/90 backdrop-blur-md shadow-lg fixed w-full z-50 transition-all duration-300"
+    >
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center h-20">
+          <div class="flex items-center space-x-2">
+            <a
+              href="index.html"
+              class="text-2xl font-extrabold bg-gradient-to-r from-[#2563EB] to-[#60A5FA] bg-clip-text text-transparent hover:scale-105 transition-transform"
+            >
+              CodeVenture
+            </a>
+          </div>
+          <!-- Menu Desktop -->
+          <div class="hidden md:flex items-center space-x-8">
+            <a
+              href="index.html"
+              class="relative text-[#1E293B] hover:text-[#2563EB] transition-colors group"
+            >
+              Accueil
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#2563EB] transition-all duration-300 group-hover:w-full"
+              ></span>
+            </a>
+            <a
+              href="services.html"
+              class="relative text-[#1E293B] hover:text-[#2563EB] transition-colors group"
+            >
+              Services
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#2563EB] transition-all duration-300 group-hover:w-full"
+              ></span>
+            </a>
+            <a
+              href="projets.html"
+              class="relative text-[#1E293B] hover:text-[#2563EB] transition-colors group"
+            >
+              Projets
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#2563EB] transition-all duration-300 group-hover:w-full"
+              ></span>
+            </a>
+            <a
+              href="equipe.html"
+              class="relative text-[#1E293B] hover:text-[#2563EB] transition-colors group"
+            >
+              Équipe
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#2563EB] transition-all duration-300 group-hover:w-full"
+              ></span>
+            </a>
+            <a
+              href="contact.html"
+              class="px-6 py-2 bg-[#2563EB] text-white rounded-lg hover:bg-[#60A5FA] transform hover:-translate-y-0.5 transition-all duration-300 shadow-lg hover:shadow-[#2563EB]/50"
+            >
+              Contact
+            </a>
+          </div>
+          <!-- Menu Mobile -->
+          <div class="md:hidden">
+            <button
+              id="mobile-menu-button"
+              class="text-[#1E293B] hover:text-[#2563EB] transition-colors"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!-- Menu Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden pb-6">
+          <a
+            href="index.html"
+            class="block py-2 text-[#1E293B] hover:text-[#2563EB] transition-colors"
+            >Accueil</a
+          >
+          <a
+            href="services.html"
+            class="block py-2 text-[#1E293B] hover:text-[#2563EB] transition-colors"
+            >Services</a
+          >
+          <a
+            href="projets.html"
+            class="block py-2 text-[#1E293B] hover:text-[#2563EB] transition-colors"
+            >Projets</a
+          >
+          <a
+            href="equipe.html"
+            class="block py-2 text-[#1E293B] hover:text-[#2563EB] transition-colors"
+            >Équipe</a
+          >
+          <a
+            href="contact.html"
+            class="block py-2 text-[#1E293B] hover:text-[#2563EB] transition-colors"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section Projets -->
+    <section
+      class="relative min-h-[60vh] flex items-center justify-center overflow-hidden"
+    >
+      <div class="absolute inset-0 z-0">
+        <img
+          src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80"
+          alt="Projets Background"
+          class="w-full h-full object-cover animate-subtle-zoom"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-[#1E293B]/90 to-[#1E293B]/90"
+        ></div>
+      </div>
+      <div class="relative z-10 max-w-7xl mx-auto px-4 py-32 text-center">
+        <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">
+          <span
+            class="bg-gradient-to-r from-white to-[#60A5FA] bg-clip-text text-transparent"
+          >
+            Nos Réalisations
+          </span>
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-200 max-w-2xl mx-auto">
+          Découvrez nos projets les plus innovants
+        </p>
+      </div>
+    </section>
+
+    <!-- Grille de Projets -->
+    <section class="py-20">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Projet 1 -->
+          <div class="group relative overflow-hidden rounded-2xl">
+            <img
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+              alt="Projet E-commerce"
+              class="w-full aspect-video object-cover transform group-hover:scale-110 transition-transform duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[#1E293B] to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300"
+            >
+              <div class="absolute bottom-0 left-0 right-0 p-6">
+                <h3 class="text-xl font-bold text-white mb-2">
+                  Mouflette Design
+                </h3>
+                <p class="text-gray-300 mb-4">
+                  Boutique en ligne de créations artisanales et personnalisées
+                </p>
+                <a
+                  href="https://mouflette.design"
+                  target="_blank"
+                  class="inline-flex items-center text-white hover:text-[#60A5FA] transition-colors"
+                >
+                  Voir le projet
+                  <svg
+                    class="w-4 h-4 ml-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 2 -->
+          <div class="group relative overflow-hidden rounded-2xl">
+            <img
+              src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+              alt="Site Vitrine"
+              class="w-full aspect-video object-cover transform group-hover:scale-110 transition-transform duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[#1E293B] to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300"
+            >
+              <div class="absolute bottom-0 left-0 right-0 p-6">
+                <h3 class="text-xl font-bold text-white mb-2">
+                  Batimmo France
+                </h3>
+                <p class="text-gray-300 mb-4">
+                  Site vitrine pour une entreprise de construction immobilière
+                </p>
+                <a
+                  href="https://batimmo-france.fr"
+                  target="_blank"
+                  class="inline-flex items-center text-white hover:text-[#60A5FA] transition-colors"
+                >
+                  Voir le projet
+                  <svg
+                    class="w-4 h-4 ml-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 3 -->
+          <div class="group relative overflow-hidden rounded-2xl">
+            <img
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+              alt="Application Web"
+              class="w-full aspect-video object-cover transform group-hover:scale-110 transition-transform duration-500"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-[#1E293B] to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300"
+            >
+              <div class="absolute bottom-0 left-0 right-0 p-6">
+                <h3 class="text-xl font-bold text-white mb-2">Chaat</h3>
+                <p class="text-gray-300 mb-4">
+                  Plateforme de chat en ligne pour les professionnels
+                </p>
+                <a
+                  href="https://www.chaat.fr"
+                  target="_blank"
+                  class="inline-flex items-center text-white hover:text-[#60A5FA] transition-colors"
+                >
+                  Voir le projet
+                  <svg
+                    class="w-4 h-4 ml-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Témoignages -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-[#1E293B] mb-12 text-center"
+        >
+          Ce qu'en disent nos clients
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Avis Projet 1 -->
+          <div
+            class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
+          >
+            <div class="flex items-center mb-6">
+              <div
+                class="w-12 h-12 bg-[#2563EB] rounded-full flex items-center justify-center text-white font-bold text-xl"
+              >
+                M
+              </div>
+              <div class="ml-4">
+                <h3 class="text-lg font-semibold text-[#1E293B]">
+                  Marie Durand
+                </h3>
+                <p class="text-gray-600">Fondatrice, Mouflette Design</p>
+              </div>
+            </div>
+            <p class="text-gray-600 mb-6">
+              "CodeVenture a parfaitement compris nos besoins et a créé une
+              boutique en ligne qui reflète l'esprit artisanal de notre marque.
+              Les ventes ont augmenté de 150% depuis le lancement."
+            </p>
+            <div class="flex text-[#2563EB]">★★★★★</div>
+          </div>
+
+          <!-- Avis Projet 2 -->
+          <div
+            class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
+          >
+            <div class="flex items-center mb-6">
+              <div
+                class="w-12 h-12 bg-[#2563EB] rounded-full flex items-center justify-center text-white font-bold text-xl"
+              >
+                P
+              </div>
+              <div class="ml-4">
+                <h3 class="text-lg font-semibold text-[#1E293B]">
+                  Pierre Martin
+                </h3>
+                <p class="text-gray-600">Directeur, Batimmo France</p>
+              </div>
+            </div>
+            <p class="text-gray-600 mb-6">
+              "Le site vitrine développé par CodeVenture nous a permis
+              d'augmenter notre visibilité en ligne. Notre taux de conversion a
+              doublé en seulement 3 mois."
+            </p>
+            <div class="flex text-[#2563EB]">★★★★★</div>
+          </div>
+
+          <!-- Avis Projet 3 -->
+          <div
+            class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
+          >
+            <div class="flex items-center mb-6">
+              <div
+                class="w-12 h-12 bg-[#2563EB] rounded-full flex items-center justify-center text-white font-bold text-xl"
+              >
+                S
+              </div>
+              <div class="ml-4">
+                <h3 class="text-lg font-semibold text-[#1E293B]">
+                  Sophie Lambert
+                </h3>
+                <p class="text-gray-600">CEO, Chaat</p>
+              </div>
+            </div>
+            <p class="text-gray-600 mb-6">
+              "L'équipe de CodeVenture a développé une plateforme de chat
+              performante et intuitive. Leur expertise technique et leur
+              réactivité ont été essentielles à notre succès."
+            </p>
+            <div class="flex text-[#2563EB]">★★★★★</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call-to-Action -->
+    <section class="relative py-20 overflow-hidden">
+      <div class="absolute inset-0 bg-[#1E293B]">
+        <div class="absolute inset-0 bg-[#2563EB]/20 backdrop-blur-3xl"></div>
+      </div>
+      <div class="relative z-10 max-w-7xl mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-5xl font-bold text-white mb-8">
+          Vous avez un projet similaire ?
+        </h2>
+        <p class="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
+          Discutons ensemble de votre projet et voyons comment nous pouvons vous
+          aider à le réaliser.
+        </p>
+        <a
+          href="contact.html"
+          class="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-white bg-[#2563EB] rounded-xl hover:bg-[#60A5FA] transform hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-[#2563EB]/50"
+        >
+          Démarrer votre projet
+          <svg
+            class="w-5 h-5 ml-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17 8l4 4m0 0l-4 4m4-4H3"
+            />
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <footer class="bg-[#1E293B] text-white py-12">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center">
+          <a
+            href="index.html"
+            class="text-2xl font-extrabold bg-gradient-to-r from-[#2563EB] to-[#60A5FA] bg-clip-text text-transparent hover:scale-105 transition-transform"
+          >
+            CodeVenture
+          </a>
+          <p class="mt-4 text-gray-400">contact@codeventure.fr</p>
+          <div class="mt-8 pt-8 border-t border-gray-800">
+            <p class="text-gray-400">
+              &copy; 2024 CodeVenture. Tous droits réservés.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script pour le menu mobile -->
+    <script>
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
+  </body>
+</html>
